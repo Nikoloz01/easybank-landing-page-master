@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+*{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+.container{
+    max-width: 1920px;
+    margin: auto;
+    padding:0;
+    box-sizing: border-box;
+}
+header img{
+    padding-left: 150px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+header ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    font-weight: 400;
+    color: gray;
+}
+header ul li{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+header ul li::after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: -35px;
+  left: 0;
+  background-color:hsl(136, 65%, 51%);
+  transition: 0.1s;
+}
+header ul li:hover:after {
+    transform: scaleX(1);
+  }
+header ul li:hover{
+    color: black;
+}
+.button-1 {
+  background-color: hsl(136, 65%, 51%);
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  height: 40px;
+  padding: 12px 35px;
+  padding-bottom: 35px;
+  margin-top: -20px;
+  color: white;
+  margin-right: 140px;
+}
+.button-1:hover{
+    background-color:hsl(136, 72%, 59%);
+}
+main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 150px;
+}
+main h1{
+padding-top: 100px;
+font-size: 70px;
+font-weight: 400;
+padding-right: 70px;
+
+}
+main h1,p{
+    padding-bottom:50px ;
+}
+main p{
+    font-size: 20px;
+    color: gray;
+    padding-right: 200px;
+}
+.theme{
+    position: relative;
+    background-image:url(./images/bg-intro-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-position:top -260px left -70px; 
+    flex-basis: 1680px;
+}
+.theme img{
+    
+}
